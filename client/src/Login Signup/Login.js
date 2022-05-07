@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import {Link} from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import axios from 'axios';
+import useAuth from '../MyHooks/useAuth';
 function Login() {
+    const { setLogin } = useAuth();
     axios.defaults.withCredentials = true;
     const[Email,setEmail]=useState('')
     const[Password,setPassword]=useState('')
@@ -15,7 +17,7 @@ function Login() {
         setPassword('')
         const data = response.data
         if(data=="Logged in"){
-            //props.func()
+            setLogin(true)
             navigate("/Dashboard", { replace: true });
         }
         else{
