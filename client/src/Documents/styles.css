@@ -1,0 +1,115 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3F3F3;
+  margin: 0; 
+}
+.btn.btn-primary.button{
+  width: 200px;
+  padding: 10px;
+  align-self: center;
+  border-radius: 10px;
+  position: absolute;
+  left: 43%;
+  margin-right: -58%;
+}
+
+.container .ql-editor {
+  width: 8.5in;
+  min-height: 11in;
+  padding: 1in;
+  margin: 1rem;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+  background-color: white;
+}
+
+.container .ql-container.ql-snow {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+
+.container .ql-toolbar.ql-snow {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #F3F3F3;
+  border: none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .5);
+}
+
+
+/* Popup style */
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 80vh;
+  margin-top: calc(100vh - 80vh - 30px);
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+}
+
+.close-icon {
+  content: "x";
+  cursor: pointer;
+  position: fixed;
+  right: calc(25% - 10px);
+  top: calc(100vh - 80vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+
+
+@page {
+  margin: 1in;
+}
+
+@media print {
+  body {
+    background: none;
+  }
+
+  .container .ql-editor {
+    width: 6.5in;
+    height: 9in;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    align-self: flex-start;
+  }
+
+  .container .ql-toolbar.ql-snow {
+    display: none;
+  }
+  .btn{
+    display: none;
+  }
+  .nav-item{
+    display:none;
+  }
+}
