@@ -1,6 +1,6 @@
 # Version Control App
 
-This is a Version control API made using Express node and MongoDB
+This is a Fullstack Version control APP made using Express node and MongoDB
 
 ### Tool used
 
