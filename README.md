@@ -4,6 +4,11 @@ This is a Fullstack Version control APP made using Express node and MongoDB
 
 ### Tool used
 
+- React
+- React Router Dom 
+- React Context
+- Quill
+- Bootstrap
 - MongoDB
 - Mongoose 
 - Node
